@@ -1,0 +1,97 @@
+body {
+    font-family: Verdana,Geneva,sans-serif;
+    font-weight: 1000;
+}
+
+h1, h2 {
+    text-decoration: underline
+}
+
+#logo {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#Intro > h1 {
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+#Intro i {
+    margin-left: 35px;
+}
+
+#Intro ul {
+    list-style-type: none;
+    color:#00d900;
+    font-style: italic;
+}
+
+#Intro li {
+    padding-left: 35px;
+}
+
+#Intro span {
+    color:#00d900;
+    padding-left: 45px;
+}
+
+/* #Intro span {
+    padding-left: 40px;
+} */
+
+#Manifest {
+    display: block;
+    margin: 35px 10vw 35px 10vw;
+    padding: 15px 15px 15px 15px;
+    border: 3px solid #00d900;
+}
+
+#Manifest span {
+    padding-left: 0 !important
+}
+
+#Datas iframe {
+    width: 600px;
+    height: 720px;
+    display: flex;
+    margin: auto
+}
+
+#Definitions iframe {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    margin: auto
+}
+
+#Resources a {
+    font-style: italic;
+}
+
+#player {
+    width: 600px;
+    height: 400px
+}
+
+#Datas iframe {
+    width: 80vw;
+    height: 700px;
+    margin: auto
+}
+
+#Datas img {
+    width: 48vw;
+    margin: auto;
+}
+
+.forest {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ConceptualScheme {
+    display: flex;
+    justify-content: center
+}
