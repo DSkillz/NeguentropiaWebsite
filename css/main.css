@@ -1,44 +1,36 @@
 body {
     width: 100%;
-    margin: 0;
-    overflow-x: hidden;
+    /* margin: auto !important; */
+    /*     overflow-x: hidden; */
     font-family: Verdana, Geneva, sans-serif;
 }
 
-#logo {
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    max-width: 100vw;
-    width: 100vw;
-}
+/* #Intro iframe {
+    height: auto;
+} */
 
-section {
-    width: 90vw;
-    margin: auto
-}
-
-#Intro iframe {
-    width: 100%;
-    height: 455px;
-}
-
-div, blockquote, p, span, li, dl, dd {
+div,
+blockquote,
+p,
+span,
+li,
+dl,
+dd {
     color: black;
     font-weight: 900;
-    font-size:17px;
+    font-size: 17px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     text-decoration: underline;
     color: #00d900;
     font-weight: 900;
     font-style: italic
 }
 
-#Intro > h1 {
+#Intro>h1 {
     margin-top: 65px;
     text-decoration: underline;
 }
@@ -49,7 +41,7 @@ h1, h2, h3 {
 
 #Intro ul {
     list-style-type: none;
-    color:#00d900;
+    color: #00d900;
     font-style: italic;
 }
 
@@ -58,27 +50,15 @@ h1, h2, h3 {
 }
 
 #Intro span {
-    color:#00d900;
+    color: #00d900;
     padding-left: 45px;
 }
 
-/* #Intro span {
-    padding-left: 40px;
-} */
-
-#Datas iframe {
-    width: 90vw;
-    height: 720px;
-    display: flex;
-    margin: auto
-}
-
-#Definitions iframe {
-    width: 90vw;
+/* #Definitions iframe {
     height: 400px;
     display: flex;
     margin: auto
-}
+} */
 
 #Definitions h1 {
     font-size: 40px;
@@ -98,23 +78,26 @@ h1, h2, h3 {
     height: 400px
 }
 
-#Datas iframe {
-    width: 80vw;
-    height: 700px;
-    margin: auto
+iframe {
+        width: 1px;
+        min-width: 100%;
+        min-height: 500px;
 }
 
-#Datas img {
-    width: 44vw;
+#Datas iframe > * {
+    overflow: hidden;
+}
+
+/* #Datas img {
+   max-width: 44vw;
     margin: auto;
+} */
+
+.climate {
+    min-height: 400px !important;
 }
 
-.forest {
-    display: flex;
-    justify-content: space-between;
-}
-
-#ConceptualScheme {
+/* #ConceptualScheme {
     display: flex;
     justify-content: center
-}
+} */
