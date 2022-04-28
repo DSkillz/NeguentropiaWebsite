@@ -240,9 +240,11 @@
             <h2>Société Néguentropique, de l'entropie à la néguentropie (<a
                     href="https://fr.wikipedia.org/wiki/Bernard_Stiegler">Bernard
                     Stiegler</a>, philosophe):</h2>
-            <iframe src="https://www.youtube.com/embed/PW6fA9NjNQI" title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <div class="ratio ratio-16x9" style="max-width: 800px; margin:auto;">
+                <iframe src="https://www.youtube.com/embed/PW6fA9NjNQI" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
             <h2>Hypothèse Gaïa (i.e hypothèse biogéochimique: </h2>
             <p>
                 Il s'agit d'une <a href="https://fr.wikipedia.org/wiki/Hypoth%C3%A8se" title="Hypothèse">hypothèse</a>
@@ -5289,7 +5291,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"
         integrity="sha512-dnvR4Aebv5bAtJxDunq3eE8puKAJrY9GBJYl9GC6lTOEC76s1dbDfJFcL9GyzpaDW4vlI/UjR8sKbc1j6Ynx6w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"">
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"">
     </script>
     <script>
         function googleTranslateElementInit() {
@@ -5297,12 +5300,17 @@
                 pageLanguage: 'fr'
             }, 'google_translate_element');
         }
-    </script>
-    <!--     <script src="https://cdn.jsdelivr.net/npm/translate@latest/translate.min.js"></script> -->
+
+        const html = '<div>Hello world</div>'
+            const json = window.himalaya.parse(html)
+            console.log('👉', json)
+        </script>
+<!--     <script src=" https://cdn.jsdelivr.net/npm/translate@latest/translate.min.js"> </script>--> <script
+        src="https://cdn.jsdelivr.net/npm/himalaya@1.1.0/lib/index.min.js"></script>
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             iFrameResize({
-                    log: true, // Enable console logging
+                    log: false, // Enable console logging
                     enablePublicMethods: true
                 },
                 'iframe',
