@@ -54,6 +54,11 @@ h3 {
     padding-left: 45px;
 }
 
+#Manifest {
+    max-width: 750px;
+    margin: auto;
+}
+
 /* #Definitions iframe {
     height: 400px;
     display: flex;
@@ -81,23 +86,24 @@ h3 {
 iframe {
         width: 1px;
         min-width: 100%;
-        min-height: 500px;
 }
+
+/* .iframeContainer, .iframeContainer iframe {
+    min-height: 720px;
+} */
 
 #Datas iframe > * {
     overflow: hidden;
 }
 
-/* #Datas img {
-   max-width: 44vw;
-    margin: auto;
-} */
-
 .climate {
     min-height: 400px !important;
 }
 
-/* #ConceptualScheme {
-    display: flex;
-    justify-content: center
-} */
+.goog-logo-link {
+    display: none!important;
+}
+
+#toResize2 body, #toResize3 body {
+    height: auto;
+}
