@@ -119,7 +119,7 @@
                 </p>
             </div>
             <div id="Manifest" class="section">
-                <iframe src="https://digital-skillz.fr/neguentropia/manifest.html"></iframe>
+                <iframe src="manifest.html"></iframe>
             </div>
         </section>
         <section id="Datas" class="section row justify-content-center">
