@@ -1,0 +1,16 @@
+{
+  "name": "Horloge PWA",
+  "short_name": "Horloge",
+  "description": "Une PWA qui affiche l'heure actuelle",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "192x192"
+    }
+  ]
+}

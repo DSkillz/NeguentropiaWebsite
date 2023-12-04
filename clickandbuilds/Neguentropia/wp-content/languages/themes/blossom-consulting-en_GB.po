@@ -1,0 +1,174 @@
+# Translation of Themes - Blossom Consulting in English (UK)
+# This file is distributed under the same license as the Themes - Blossom Consulting package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-07-07 21:33:15+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.1\n"
+"Language: en_GB\n"
+"Project-Id-Version: Themes - Blossom Consulting\n"
+
+#. Description of the theme
+#, gp-priority: high
+msgid "Blossom Consulting is free child theme of Blossom Coach WordPress theme. Blossom Consulting is a perfect choice to create websites for consultants and consulting companies, coaches (life coach, health coach), speakers, business and creative agencies, content marketers, affiliate bloggers and psychologists. The theme is also multi-purpose. So you can also use it to build small business (restaurants/cafe, travel, education, hotel, construction, events, wedding planners, fitness, affiliate, fashion, lawyer, sport/medical shops, spa/temas, political), portfolio, church, online agencies and firms, charity, ecommerce (WooCommerce), and freelancers websites. It is responsive, Schema.org compatible, SEO friendly, RTL compatible, speed optimized, and translation ready. Check theme details at https://blossomthemes.com/downloads/blossom-consulting-free-wordpress-theme/, demo at https://blossomthemes.com/theme-demo/?theme=blossom-consulting, read the documentation at https://docs.blossomthemes.com/docs/blossom-consulting/, and get support at https://blossomthemes.com/support-ticket/."
+msgstr "Blossom Consulting is a free child theme of the Blossom Coach WordPress theme. Blossom Consulting is a perfect choice to create websites for consultants and consulting companies, coaches (life coach, health coach), speakers, business and creative agencies, content marketers, affiliate bloggers and psychologists. The theme is also multi-purpose. So you can also use it to build small business (restaurant/café, travel, education, hotel, construction, events, wedding planner, fitness, affiliate, fashion, lawyer, sport/medical shop, spa, political), portfolio, church, online agency and firm, charity, eCommerce (WooCommerce), and freelancer websites. It is responsive, Schema.org compatible, SEO friendly, RTL compatible, speed optimised, and translation ready. Check theme details at: https://blossomthemes.com/downloads/blossom-consulting-free-wordpress-theme/, the demo at: https://blossomthemes.com/theme-demo/?theme=blossom-consulting, read the documentation at: https://docs.blossomthemes.com/docs/blossom-consulting/, and get support at: https://blossomthemes.com/support-ticket/."
+
+#. Theme Name of the theme
+#, gp-priority: high
+msgid "Blossom Consulting"
+msgstr "Blossom Consulting"
+
+#: functions.php:138
+msgid " Blossom Consulting | Developed By "
+msgstr " Blossom Consulting | Developed By "
+
+#: sections/shop.php:45
+msgid "Sold Out"
+msgstr "Sold Out"
+
+#: sections/shop.php:9
+msgid "Show your latest blog posts here. You can modify this section from Appearance > Customize > Front Page Settings > Shop Section."
+msgstr "Show your latest blog posts here. You can modify this section from Appearance > Customise > Front Page Settings > Shop Section."
+
+#: inc/customizer.php:351
+msgid "Documentation Link: %1$sClick here.%2$s"
+msgstr "Documentation Link: %1$sClick here.%2$s"
+
+#: inc/customizer.php:349
+msgid "Demo Link: %1$sClick here.%2$s"
+msgstr "Demo Link: %1$sClick here.%2$s"
+
+#: inc/customizer.php:336
+msgid "Demo & Documentation"
+msgstr "Demo & Documentation"
+
+#: inc/customizer.php:327
+msgid "Product Four"
+msgstr "Product Four"
+
+#: inc/customizer.php:306
+msgid "Product Three"
+msgstr "Product Three"
+
+#: inc/customizer.php:285
+msgid "Product Two"
+msgstr "Product Two"
+
+#: inc/customizer.php:264
+msgid "Product One"
+msgstr "Product One"
+
+#: inc/customizer.php:239
+msgid "Section Content"
+msgstr "Section Content"
+
+#: inc/customizer.php:229 inc/customizer.php:398
+msgid "Show your products here. You can modify this section from Appearance > Customize > Front Page Settings > Shop Section."
+msgstr "Show your products here. You can modify this section from Appearance > Customise > Front Page Settings > Shop Section."
+
+#: inc/customizer.php:214
+msgid "Section Title"
+msgstr "Section Title"
+
+#: inc/customizer.php:204 inc/customizer.php:391 sections/shop.php:8
+msgid "Shop"
+msgstr "Shop"
+
+#: inc/customizer.php:194
+msgid "Enable to show shop section."
+msgstr "Enable to show shop section."
+
+#: inc/customizer.php:193
+msgid "Enable Shop Section"
+msgstr "Enable Shop Section"
+
+#: inc/customizer.php:172
+msgid "Shop Section"
+msgstr "Shop Section"
+
+#: inc/customizer.php:161
+msgid "Banner Link"
+msgstr "Banner Link"
+
+#: inc/customizer.php:137
+msgid "Banner Label"
+msgstr "Banner Label"
+
+#: inc/customizer.php:128 inc/customizer.php:384 sections/banner.php:15
+msgid "Discover More"
+msgstr "Discover More"
+
+#: inc/customizer.php:112
+msgid "Sub Title"
+msgstr "Sub Title"
+
+#: inc/customizer.php:103 inc/customizer.php:377 sections/banner.php:14
+msgid "Sally is a solution focused therapist offering brief and often single session therapy. She has built a reputation for engaging workshops on Solution Focused Brief Therapy and Single Session Therapy, and have recently started to put her courses online."
+msgstr "Sally is a solution focused therapist offering brief and often single session therapy. She has built a reputation for engaging workshops on Solution Focused Brief Therapy and Single Session Therapy, and has recently started to put her courses online."
+
+#: inc/customizer.php:87
+msgid "Title"
+msgstr "Title"
+
+#: inc/customizer.php:78 inc/customizer.php:370 sections/banner.php:13
+msgid "The Secrets to Successful Team Leadership"
+msgstr "The Secrets to Successful Team Leadership"
+
+#: inc/customizer.php:67
+msgid "Banner as Slider"
+msgstr "Banner as Slider"
+
+#: inc/customizer.php:66
+msgid "Static/Video Newsletter Banner"
+msgstr "Static/Video Newsletter Banner"
+
+#: inc/customizer.php:65
+msgid "Static/Video CTA Banner"
+msgstr "Static/Video CTA Banner"
+
+#: inc/customizer.php:64
+msgid "Disable Banner Section"
+msgstr "Disable Banner Section"
+
+#: inc/customizer.php:61
+msgid "Choose banner as static image/video or as a slider."
+msgstr "Choose banner as static image/video or as a slider."
+
+#: inc/customizer.php:60
+msgid "Banner Options"
+msgstr "Banner Options"
+
+#: inc/customizer.php:34
+msgid "Change the font size of your site title."
+msgstr "Change the font size of your site title."
+
+#: inc/customizer.php:33
+msgid "Site Title Font Size"
+msgstr "Site Title Font Size"
+
+#: functions.php:140
+msgid "https://wordpress.org/"
+msgstr "https://en-gb.wordpress.org/"
+
+#: functions.php:140
+msgid " Powered by %s"
+msgstr " Powered by %s"
+
+#. Author URI of the theme
+#, gp-priority: low
+msgid "https://blossomthemes.com/"
+msgstr "https://blossomthemes.com/"
+
+#. Author of the theme
+#: functions.php:139
+#, gp-priority: low
+msgid "Blossom Themes"
+msgstr "Blossom Themes"
+
+#. Theme URI of the theme
+#, gp-priority: low
+msgid "https://blossomthemes.com/downloads/blossom-consulting-free-wordpress-theme/"
+msgstr "https://blossomthemes.com/downloads/blossom-consulting-free-wordpress-theme/"

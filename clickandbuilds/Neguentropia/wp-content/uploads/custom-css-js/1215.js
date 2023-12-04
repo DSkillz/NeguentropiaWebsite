@@ -1,0 +1,5 @@
+<!-- start Simple Custom CSS and JS -->
+<script type="text/javascript">
+document.querySelector(".copyright").innerHTML='<section style="display: flex; flex-direction: row; align-items: baseline; justify-content: center;"><div style="display: flex;flex-direction: column;"><img style="width: 100px; align-self: center;" src="https://neguentropia.org/wp-content/uploads/2023/11/by-sa.png" alt="creative commons"/><span>CopyLeft 2023</span><br><br><img style="width: 100px; align-self: center;" src=reative commons for black background" alt="neguentropia website github sources"/><span> Voir les sources</span></div><div style="margin: 0 20px 0 20px;"><a href="https://neguentropia.org/">Neguentropia Research Institute for Environmental Sciences</a>.<br>Licencié sous <a href="https://opensource.org/license/gpl-3-0/">GNU General Public License</a><br>de l\'<a href="https://opensource.org/"</a>Open Source Initiative.</div><div><img style="width: 100px; align-self: center;" src="https://neguentropia.org/wp-content/uploads/2023/11/osi-badge-light.png" alt="open source inititive"/></div></section>'
+</script>
+<!-- end Simple Custom CSS and JS -->
