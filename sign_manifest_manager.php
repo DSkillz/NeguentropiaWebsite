@@ -1,9 +1,9 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "signmanifest";
+$servername = "172.16.54.127:3306"
+$username = "Neguen";
+$password = "13371985000@Bdd";
+$dbname = "Neguentropia";
 
 try {
     $bdd = new PDO("mysql:host=$servername;dbname=signmanifest", $username, $password);
