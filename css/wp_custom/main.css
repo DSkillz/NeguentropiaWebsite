@@ -668,3 +668,9 @@ figure {
     background-image: url("/img/uploads/2021/11/mission-carbone-scaled.jpg");
     background-size: cover
 }
+
+#thankYouMessage p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px
+}
