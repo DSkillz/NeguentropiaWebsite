@@ -1,14 +1,21 @@
-<?php
+ <?php
 
-$servername = "172.16.54.127:3306"
-$username = "Neguen";
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+$servername = "localhost";
+$username = "DSkillz";
 $password = "13371985000@Bdd";
 $dbname = "Neguentropia";
 
-try {
-    $bdd = new PDO("mysql:host=$servername;dbname=signmanifest", $username, $password);
-    $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connexion réussie !";
-} catch(PDOException $e) {
-    echo "Erreur : ".$e->getMessage();
-}
+  // Create connection
+  $mysqli = new mysqli($servername, $username, $password, $dbname);
+
+  // Check connection
+  if ($mysqli->connect_error) {
+    die("Connection failed: " . $mysqli->connect_error);
+  }
+
+  echo "Connected successfully";
+
+  $mysqli->close();
+  ?>
