@@ -12,21 +12,24 @@ $('.list .title').each(function (index) {
         title = "Modèle Handy"
     }
 
-    // Insère une ancre pour etre plus tard utilisée pour le 3D Tag Cloud
+    // remove the anchor if it exists
+    // to avoid duplicates
+    // in the list content
+    $(this).find('.anchor').remove()
+
     $('.list anchor').remove()
 
-    // var link = $(this).attr('href')
-
-    // create the list box entry
+    // create the list box entries
+    // and the anchor in the summary list
+    // to be used by the 3D Tag Cloud
+    // and the summary list
     var anchor = `#${title}`
     $('#summary-list ul').append(`<li><a href="${anchor}">${title}</a></li>`)
 
-    // create the anchor in the main content
+    // create the anchor in the list content
     $(this).append(`<a id="${title}" class="anchor"></a>`)
 
     // create the entry for the 3D Tag Cloud
-
-
     entries.push({
         label: title,
         url: anchor,
@@ -71,3 +74,10 @@ var settings = {
 
 //var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
 $('#tag-cloud').svg3DTagCloud(settings);
+
+// toggle navigation on/off
+$("#def-nav-button").on("click", function () {
+    $("#navtype-toggle").toggle("slow", function () {
+    });
+    $("#summary-list").toggle("slow", function () {});
+});
