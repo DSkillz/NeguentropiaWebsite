@@ -114,7 +114,7 @@
                                         </svg><!-- <i class="fab fa-youtube"></i> Font Awesome fontawesome.com --></a>
                                     <br>
                                 </li>
-                                <li><a href="https://tiktok.com/@Neguentropia" target="_blank" rel="nofollow"><svg
+                                <li><a href="https://tiktok.com/@neguentropia" target="_blank" rel="nofollow"><svg
                                             class="svg-inline--fa fa-tiktok" aria-hidden="true" focusable="false"
                                             data-prefix="fab" data-icon="tiktok" role="img"
                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
