@@ -18,7 +18,7 @@
                                 src="https://donorbox.org/embed/neguentropia?default_interval=m&amount=10"
                                 name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless"
                                 frameborder="0" scrolling="no" height="900px" width="80vw"
-                                style="max-width: 500px; min-width: 250px; max-height:none!important; margin: 3px auto; display: block;"
+                                style="max-width: 500px; min-width: 250px; max-height:none!important; margin: 3px auto !important; display: block;"
                                 allow="payment"></iframe>
 
                         </section>

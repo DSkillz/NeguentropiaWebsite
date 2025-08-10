@@ -10,6 +10,14 @@
     --slide-height: 1000px !important
 }
 
+
+.tabs .donation-widget .v1_0 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 .responsive span,
 .responsive p {
     display: flex;
@@ -673,8 +681,4 @@ figure {
     font-size: 25px;
     font-weight: bold;
     margin-top: 20px
-}
-
-.tabs .donation-widget {
-    margin: auto;
 }

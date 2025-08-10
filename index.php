@@ -75,8 +75,10 @@
                                     d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z">
                                 </path>
                             </svg><!-- <i class="fa fa-phone"></i> Font Awesome fontawesome.com --><a
-                                href="tel:+33769961580"><span class="phone">+33769961580</span></a></span><span><svg
-                                class="svg-inline--fa fa-envelope" aria-hidden="true" focusable="false"
+                                href="tel:+33769961580"><span class="phone">+33769961580</span></a></span>
+
+                        <span style="display: flex; align-items: center;"><svg
+                                class=" svg-inline--fa fa-envelope" aria-hidden="true" focusable="false"
                                 data-prefix="fas" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512" data-fa-i2svg="">
                                 <path fill="currentColor"
@@ -84,12 +86,14 @@
                                 </path>
                             </svg><!-- <i class="fa fa-envelope"></i> Font Awesome fontawesome.com --><a
                                 href="mailto:neguentropia@proton.me"><span
-                                    class="email">neguentropia@proton.me</span></a></span></div>
+                                    class="email">neguentropia@proton.me</span></a>
+                        </span>
+                    </div>
                     <!-- .top-left -->
                     <div class="top-right">
                         <div class="header-social">
                             <ul class="social-icons">
-                                <li><a href="https://linkedin.com/in/subileaumatthias" target="_blank"
+                                <li><a href="https://www.linkedin.com/company/gaia-mobility-technologies" target="_blank"
                                         rel="nofollow"><svg class="svg-inline--fa fa-linkedin-in" aria-hidden="true"
                                             focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img"
                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
@@ -130,7 +134,7 @@
                                         </svg><!-- <i class="fab fa-instagram"></i> Font Awesome fontawesome.com --></a>
                                     <br>
                                 </li>
-                                <li><button onclick="linkclick('donorbox.php')" style="color: #91D660 !important;
+                                <li><button onclick="linkclick('donorbox.php'); showHeartExplosionPopup();" style="color: #91D660 !important;
   border-radius: 7px;" target="_blank" rel="nofollow"><svg
                                             class="svg-inline--fa fa-gratipay" aria-hidden="true" focusable="false"
                                             data-prefix="fab" data-icon="gratipay" role="img"
@@ -448,6 +452,7 @@
         <script src="js/svg3DTagCloud/jquery.svg3DTagCloud.min.js" type="text/javascript"></script>
         <script src="js/ecology_guide_list_filtering/list.min.js" type="text/javascript"></script>
         <script src="js/simple_custom/manifest_management.js"></script>
+        <script src="js/heartExplosion.js"></script>
 
         <!---------------- # NAVIGATION AJAX SCRIPT ------------->
         <script type="text/javascript">
