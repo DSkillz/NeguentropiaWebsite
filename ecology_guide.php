@@ -84,7 +84,7 @@
                                         <button id="def-nav-button" class="btn btn-primary btn-sm">Navigation
                                             on/off</button>
                                         <div id="def-list-nav">
-                                            <button id="navtype-toggle" class="btn btn-primary btn-sm">List</button>
+                                            <button id="navtype-toggle" class="btn btn-primary btn-sm">List (switch)</button>
                                             <div id="summary-list">
                                                 <ul></ul>
                                             </div>

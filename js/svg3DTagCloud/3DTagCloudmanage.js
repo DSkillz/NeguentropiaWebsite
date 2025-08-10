@@ -74,10 +74,22 @@ var settings = {
 
 //var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
 $('#tag-cloud').svg3DTagCloud(settings);
+$('#tag-cloud').svg3DTagCloud('setEntries', entries);
 
 // toggle navigation on/off
 $("#def-nav-button").on("click", function () {
-    $("#navtype-toggle").toggle("slow", function () {
-    });
+    $("#navtype-toggle").toggle("slow", function () {});
     $("#summary-list").toggle("slow", function () {});
+});
+
+// switch summary-list / tag-cloud
+$("#navtype-toggle").on("click", function () {
+    if ($("#navtype-toggle").text() === "List (switch)") {
+        $("#navtype-toggle").text("Sphere (switch)");
+    } else {
+        $("#navtype-toggle").text("List (switch)");
+    }
+
+    $("#summary-list").toggle("slow", function () {});
+    $("#tag-cloud").toggle("slow", function () {})
 });
