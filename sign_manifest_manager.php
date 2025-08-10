@@ -32,6 +32,8 @@ if ($mysqli->connect_error) {
 if (isset($_POST['sign'])) {
 
   var_dump($_POST);
+  echo "dump terminé!";
+  echo "<br>";
 
   $firstname = $_POST['lastname'];
   $lastname  = $_POST['firstname'];

@@ -323,6 +323,18 @@
         include('footer.php');
         ?>
 
+        <!---------------- # JS IMPORTS BEGINS ---->
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.7.1.min.js" id="jquery-core-js"></script>
+        <script type="text/javascript" src="js/jquery-migrate-3.4.1.min.js" id="jquery-migrate-js"></script>
+        <script src="js/jquery-easing.min.js" type="text/javascript"></script>
+        <script src="js/jquery.visibilityToggle.min.js" type="text/javascript"></script>
+
+        <!-- Others -->
+        <script src="js/svg3DTagCloud/jquery.svg3DTagCloud.min.js" type="text/javascript"></script>
+        <script src="js/ecology_guide_list_filtering/list.min.js" type="text/javascript"></script>
+        <script src="js/simple_custom/manifest_management.js"></script>
+
         <!---------------- # NAVIGATION AJAX SCRIPT ------------->
         <script type="text/javascript">
             function linkclick(_url) {
@@ -347,11 +359,11 @@
                             $.getScript('js/svg3DTagCloud/3DTagCloudmanage.js')
                         }
 
-                        _url == 'intro.php' ? _url = _url.split('intro') : _url = 'https://neguentropia.org';
-                        window.history.pushState({
-                            "html": _url,
-                            "pageTitle": "Nouvelle page"
-                        });
+                        // _url == 'intro.php' ? _url = _url.split('intro') : _url = 'https://neguentropia.org';
+                        // window.history.pushState({
+                        //     "html": _url,
+                        //     "pageTitle": "Nouvelle page"
+                        // });
                     },
                     error: function() {
                         $('main').text('An error occurred');
@@ -372,21 +384,6 @@
 
             }
         </script>
-
-        <!---------------- # JS IMPORTS BEGINS ---->
-        <!-- JQuery -->
-        <script type="text/javascript" src="js/jquery-3.7.1.min.js" id="jquery-core-js"></script>
-        <script type="text/javascript" src="js/jquery-migrate-3.4.1.min.js" id="jquery-migrate-js"></script>
-        <script src="js/jquery-easing.min.js" type="text/javascript"></script>
-        <script src="js/jquery.visibilityToggle.min.js" type="text/javascript"></script>
-
-        <!-- Others -->
-        <script type="text/javascript" src="js/blossom_coach_theme/custom.min.js" id="blossom-coach-js"></script>
-        <script src="js/svg3DTagCloud/jquery.svg3DTagCloud.min.js" type="text/javascript"></script>
-        <script src="js/svg3DTagCloud/3DTagCloudmanage.js" type="text/javascript"></script>
-        <script src="js/ecology_guide_list_filtering/list.min.js" type="text/javascript"></script>
-        <script src="js/strategy_manage.min.js"></script>
-
 
         <!-- GTranslate Settings -->
         <script type="text/javascript" id="gt_widget_script_86148270-js-before">

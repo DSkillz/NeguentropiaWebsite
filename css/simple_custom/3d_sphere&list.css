@@ -17,7 +17,7 @@
 }
 
 #summary-list {
-    display: none;
+    display: block;
     position: fixed;
     z-index: 20;
     overflow-y: scroll;
