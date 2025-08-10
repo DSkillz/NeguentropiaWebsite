@@ -72,14 +72,14 @@ var settings = {
 
 };
 
-//var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
-$('#tag-cloud').svg3DTagCloud(settings);
-$('#tag-cloud').svg3DTagCloud('setEntries', entries);
+// var svg3DTagCloud = new SVG3DTagCloud(document.getElementById('tag-cloud'), settings).build();
+
+// svg3DTagCloud.settings = settings;
+// svg3DTagCloud.setEntries(entries);
 
 // toggle navigation on/off
 $("#def-nav-button").on("click", function () {
-    $("#navtype-toggle").toggle("slow", function () {});
-    $("#summary-list").toggle("slow", function () {});
+    $("#def-list-nav").toggle("slow", function () {});
 });
 
 // switch summary-list / tag-cloud
