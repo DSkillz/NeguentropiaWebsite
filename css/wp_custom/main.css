@@ -674,3 +674,7 @@ figure {
     font-weight: bold;
     margin-top: 20px
 }
+
+.tabs .donation-widget {
+    margin: auto;
+}

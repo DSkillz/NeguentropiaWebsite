@@ -78,7 +78,7 @@ var settings = {
 // svg3DTagCloud.setEntries(entries);
 
 // toggle navigation on/off
-$("#def-nav-button").on("click", function () {
+$("#def-nav-button").on("click", function () { // block list + 3D Tag Cloud
     $("#def-list-nav").toggle("slow", function () {});
 });
 

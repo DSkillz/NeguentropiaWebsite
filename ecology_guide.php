@@ -4,7 +4,7 @@
         <div id="primary" class="content-area">
             <main id="main" class="site-main">
 
-                <article id="post-42" class="post-42 page type-page status-publish hentry">
+                <article id="post-42" class="post-42 page type-page status-publish entry">
                     <header class="page-header">
                         <h1 class="entry-title">Petit précis d’Écologie</h1>
                     </header>
