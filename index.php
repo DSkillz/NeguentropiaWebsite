@@ -55,6 +55,22 @@
     <link rel="icon" href="img/uploads/2023/07/cropped-channels4_profile-192x192.jpg" sizes="192x192">
     <link rel="apple-touch-icon" href="img/uploads/2023/07/cropped-channels4_profile-180x180.jpg">
     <meta name="msapplication-TileImage" content="img/uploads/2023/07/cropped-channels4_profile-270x270.jpg">
+
+    <!---------------- # JS IMPORTS BEGINS ---->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js" id="jquery-core-js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-3.4.1.min.js" id="jquery-migrate-js"></script>
+    <script src="js/jquery-easing.min.js" type="text/javascript"></script>
+    <script src="js/jquery.visibilityToggle.min.js" type="text/javascript"></script>
+
+    <!-- Others -->
+    <script src="js/gtranslate/float.js"></script>
+    <script src="js/svg3DTagCloud/jquery.svg3DTagCloud.min.js" type="text/javascript"></script>
+    <script src="js/ecology_guide_list_filtering/list.min.js" type="text/javascript"></script>
+    <script src="js/simple_custom/manifest_management.js"></script>
+    <script src="js/heartExplosion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
+
 </head>
 
 <body
@@ -440,20 +456,6 @@
         include('footer.php');
         ?>
 
-        <!---------------- # JS IMPORTS BEGINS ---->
-        <!-- JQuery -->
-        <script type="text/javascript" src="js/jquery-3.7.1.min.js" id="jquery-core-js"></script>
-        <script type="text/javascript" src="js/jquery-migrate-3.4.1.min.js" id="jquery-migrate-js"></script>
-        <script src="js/jquery-easing.min.js" type="text/javascript"></script>
-        <script src="js/jquery.visibilityToggle.min.js" type="text/javascript"></script>
-
-        <!-- Others -->
-        <script src="js/gtranslate/float.js"></script>
-        <script src="js/svg3DTagCloud/jquery.svg3DTagCloud.min.js" type="text/javascript"></script>
-        <script src="js/ecology_guide_list_filtering/list.min.js" type="text/javascript"></script>
-        <script src="js/simple_custom/manifest_management.js"></script>
-        <script src="js/heartExplosion.js"></script>
-
         <!---------------- # NAVIGATION AJAX SCRIPT ------------->
         <script type="text/javascript">
             function linkclick(_url) {
@@ -465,7 +467,11 @@
                         //     width: "toggle"
                         // })
                         $('main').html(data)
-
+                        
+                        // Recharge Sharer.js pour les nouveaux boutons dynamiques
+                        if (window.Sharer) {
+                            Sharer.init();
+                        }
                         if ($(window).width() <= 1024) {
                             $(".primary-menu-list").animate({
                                 width: 'toggle'

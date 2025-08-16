@@ -29,26 +29,20 @@ if ($mysqli->connect_error) {
 
 
 // Check if submit button is clicked
-if (isset($_POST['sign'])) {
-
-  var_dump($_POST);
-  echo "dump terminé!";
-  echo "<br>";
-
-  $firstname = $_POST['lastname'];
-  $lastname  = $_POST['firstname'];
-  $expertise = $_POST['expertise'];
-  $labo  = $_POST['labo'];
-  $location = $_POST['location'];
-  $website  = $_POST['website'];
-  $photo = $_POST['photo'];
-  $linkedin = $_POST['linkedin'];
-  $mail  = $_POST['mail'];
-
+if (isset($_POST['firstname']) && isset($_POST['lastname'])) {
+    $lastname  = $_POST['lastname'];
+    $firstname = $_POST['firstname'];
+    $expertise = $_POST['expertise'];
+    $labo      = $_POST['labo'];
+    $location  = $_POST['location'];
+    $website   = $_POST['website'];
+    $photo     = $_POST['photo'];
+    $linkedin  = $_POST['linkedin'];
+    $mail      = $_POST['mail']; // <-- attention, JS envoie 'email' et pas 'mail'
 } else {
-  debug_to_console("No data submitted");
-  exit;
-};
+    echo "";
+    exit;
+}
 
 $sql = "INSERT INTO manifest (lastname, firstname, expertise, labo, location, website, photo, linkedin, mail) VALUES ('$lastname', '$firstname', '$expertise', '$labo', '$location', '$website', '$photo', '$linkedin', '$mail')";
 
@@ -63,10 +57,12 @@ $sql = "INSERT INTO manifest (lastname, firstname, expertise, labo, location, we
 // }
 
 if ($mysqli->query($sql) === TRUE) {
-    debug_to_console("New record created successfully");
-  } else {
-    debug_to_console("ERROR: Could not able to execute $sql. " . mysqli_error($mysqli));
-  };
+  debug_to_console("New record created successfully");
+  echo "1";
+} else {
+  debug_to_console("ERROR: Could not able to execute $sql. " . mysqli_error($mysqli));
+  echo "";
+}
 
 // close connection
 $mysqli->close();

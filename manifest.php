@@ -76,7 +76,7 @@
                                 style="color: #ff0000;">refus de parvenir</span> ou de la <span
                                 style="color: #ff0000;">censure</span>.</p>
                         <br><br><br>
-                        <div id="thankYouMessage">
+                        <div>
                             <h2>Pourquoi signer ce manifeste ?</h2>
                             <p>Ce manifeste est un appel à tous les scientifiques, ingénieurs et techniciens pour
                                 qu'ils s'engagent à utiliser leurs compétences au service du vivant et de l'éthique
@@ -89,124 +89,68 @@
                             <p style="color: #ff0000; font-style: italic; font-size: 25px">Merci pour votre soutien
                                 !</p><br><br>
                         </div>
-                        <br><br><br>
-                        <h2 style="text-align: center">Signer le Manifeste</h2>
-                        <form id="signManifest" method="post" onsubmit="return false;"
-                            enctype="multipart/form-data">
-                            <div class="form-group">
-                                <label for="lastname">Votre nom:</label>
-                                <input type="text" class="form-control" id="lastname" name="lastname"
-                                    placeholder="Nom (requis)"> <!-- Removed required for debugging, add back later -->
-                            </div><br>
-                            <div class="form-group">
-                                <label for="firstname">Votre prénom:</label>
-                                <input type="text" class="form-control" id="firstname" name="firstname"
-                                    placeholder="Prénom (requis)">
-                            </div><br>
-                            <div class="form-group">
-                                <label for="expertise">Votre expertise:</label>
-                                <input type="text" class="form-control" id="expertise" name="expertise"
-                                    placeholder="Expertise (requis)">
-                            </div><br>
-                            <div class="form-group">
-                                <label for="labo">Votre Labo / Entreprise:</label>
-                                <input type="text" class="form-control" id="labo" name="labo"
-                                    placeholder="A vous de jouer ! (requis)">
-                            </div><br>
-                            <div class="form-group">
-                                <label for="location">Votre lieu d’exercice:</label>
-                                <input type="text" class="form-control" id="location" name="location"
-                                    placeholder="Adresse, ville, pays (requis)">
-                            </div><br>
-                            <div class="form-group">
-                                <label for="website">Site Internet:</label>
-                                <input type="url" class="form-control" id="website" name="website"
-                                    placeholder="Site | https://...">
-                            </div><br>
-                            <div class="form-group">
-                                <label for="photo">Votre photo</label>
-                                <input type="file" class="form-control" id="photo" name="photo"
-                                    placeholder="Votre meilleur profil (ex. photo profil LinkedIn)">
-                            </div><br>
-                            <div class="form-group">
-                                <label for="linkedin">Votre url LinkedIn:</label>
-                                <input type="url" class="form-control" id="linkedin" name="linkedin"
-                                    placeholder="Exemple: https://linkedin.com/in/...">
-                            </div><br>
-                            <div class="form-group">
-                                <label for="mail">Votre mail:</label>
-                                <input type="email" class="form-control" id="mail" name="mail"
-                                    aria-describedby="emailHelp" placeholder="Votre mail (requis)">
-                                <small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais
-                                    votre
-                                    email avec qui que ce soit.</small>
-                            </div><br>
-                            <button id="submitButton" name="sign" type="submit" class="button">Signer</button>
-                        </form>
-                        <button class="sharer button" data-sharer="linkedin"
-                            data-url="https://www.neguentropia.org/manifeste">Partager sur LinkedIn</button>
-                        <button id="viewSignatories" class="button">Voir les Signataires</button>
-
-                            <!-- Inclusions (gardez-les avant votre code JS) 
-                            -->
-                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                        <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
-
-                        <!-- Votre code JS personnalisé, avec jQuery au lieu de $ -->
-                        <script>
-                            jQuery(document).ready(function() {
-                                console.log('jQuery loaded and ready'); // Log to confirm jQuery is loaded
-                                jQuery("#signManifest").submit(function(e) {
-                                    e.preventDefault(); // prevent page refresh
-                                    console.log('Form submit triggered'); // Log to confirm submit handler runs
-                                    // Validation simple
-                                    var lastname = jQuery("#lastname").val().trim();
-                                    var firstname = jQuery("#firstname").val().trim();
-                                    var expertise = jQuery("#expertise").val().trim();
-                                    var labo = jQuery("#labo").val().trim();
-                                    var location = jQuery("#location").val().trim();
-                                    var mail = jQuery("#mail").val().trim();
-                                    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                                    if (!lastname || !firstname || !expertise || !labo || !location || !mail) {
-                                        jQuery("#thankYouMessage").html("<h2>Veuillez remplir tous les champs requis.</h2>");
-                                        console.log('Validation failed: missing fields');
-                                        return;
-                                    }
-                                    if (!emailRegex.test(mail)) {
-                                        jQuery("#thankYouMessage").html("<h2>Veuillez entrer une adresse email valide.</h2>");
-                                        console.log('Validation failed: invalid email');
-                                        return;
-                                    }
-                                    console.log('Validation passed, sending AJAX');
-                                    var formData = new FormData(this);
-                                    jQuery.ajax({
-                                        type: "POST",
-                                        url: "sign_manifest_manager.php",
-                                        data: formData,
-                                        processData: false,
-                                        contentType: false,
-                                        success: function(data) {
-                                            console.log('AJAX success', data); // Log response data
-                                            jQuery("#thankYouMessage").html("<h2>Merci pour votre signature !</h2>");
-                                            jQuery("#signManifest").hide();
-                                        },
-                                        error: function(xhr, status, error) {
-                                            console.log('AJAX error', status, error); // Detailed error log
-                                            jQuery("#thankYouMessage").html("<h2>Une erreur s'est produite : " + error + ". Veuillez réessayer plus tard.</h2>");
-                                        },
-                                        complete: function() {
-                                            console.log('AJAX complete'); // Always logs at end
-                                        }
-                                    });
-                                });
-                                jQuery("#viewSignatories").click(function() {
-                                    window.location.href = '/signataires'; // Remplacez par l'URL appropriée pour afficher les signataires
-                                });
-                            });
-                        </script>
                     </section>
-                </div><!-- .entry-content -->
-            </main><!-- #main -->
-        </div><!-- #primary -->
-    </div><!-- .wrapper -->
+                    <br><br><br>
+                    <form id="signManifest" method="post" onsubmit="return false;" enctype="multipart/form-data">
+                        <h2 style="text-align: center">Signer le Manifeste</h2>
+                        <div class="form-group">
+                            <label for="lastname">Votre nom:</label>
+                            <input type="text" class="form-control" id="lastname" name="lastname"
+                                placeholder="Nom (requis)"> <!-- Removed required for debugging, add back later -->
+                        </div><br>
+                        <div class="form-group">
+                            <label for="firstname">Votre prénom:</label>
+                            <input type="text" class="form-control" id="firstname" name="firstname"
+                                placeholder="Prénom (requis)">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="expertise">Votre expertise:</label>
+                            <input type="text" class="form-control" id="expertise" name="expertise"
+                                placeholder="Expertise (requis)">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="labo">Votre Labo / Entreprise:</label>
+                            <input type="text" class="form-control" id="labo" name="labo"
+                                placeholder="A vous de jouer ! (requis)">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="location">Votre lieu d’exercice:</label>
+                            <input type="text" class="form-control" id="location" name="location"
+                                placeholder="Adresse, ville, pays (requis)">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="website">Site Internet:</label>
+                            <input type="url" class="form-control" id="website" name="website"
+                                placeholder="Site | https://...">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="photo">Votre photo</label>
+                            <input type="file" class="form-control" id="photo" name="photo"
+                                placeholder="Votre meilleur profil (ex. photo profil LinkedIn)">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="linkedin">Votre url LinkedIn:</label>
+                            <input type="url" class="form-control" id="linkedin" name="linkedin"
+                                placeholder="Exemple: https://linkedin.com/in/...">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="mail">Votre mail:</label>
+                            <input type="email" class="form-control" id="mail" name="mail" aria-describedby="emailHelp"
+                                placeholder="Votre mail (requis)">
+                            <small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais
+                                votre
+                                email avec qui que ce soit.</small>
+                        </div><br>
+                        <button id="submitButton" name="sign" type="submit" class="button">Signer</button>
+                    </form>
+
+                </div>
+                <div id="thankYouMessage"></div>
+                <button class="sharer button" data-sharer="linkedin"
+                    data-url="https://www.neguentropia.org/manifeste">Partager sur LinkedIn</button>
+                <button id="viewSignatories" class="button">Voir les Signataires</button>
+        </div><!-- .entry-content -->
+        </main><!-- #main -->
+    </div><!-- #primary -->
+</div><!-- .wrapper -->
 </div>
